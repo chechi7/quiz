@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz mundial</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>QUIZ GAME</h1>
+        <p>Juego del mundial 2022</p>
+    </header>
+    <div class="container">
+        <section id="p0">
+            <h3>1 - ¿Quien fue el campeón?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">Francia
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">Argentina
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">Brazil
+            </label>
+            
+        </section>
+
+        <section id="p1">
+            <h3>2 - ¿Quien fue el goleador?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Messi
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Cristiano Ronaldo
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Mbappé
+            </label>
+            
+        </section>
+
+        <section id="p2">
+            <h3>3 - ¿Nombre de la mascota?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">Al Rihla
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Kura
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">La'eeb
+            </label>
+            
+        </section>
+        
+        <section id="p3">
+        <h3>4 - ¿Cauntos participantes fueron campeones del mundo?</h3>
+        <label>
+            <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">7
+        </label>
+        <label>
+            <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">9
+        </label>
+        <label>
+            <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">11
+        </label>
+        
+        </section>
+
+        <section id="p4">
+        <h3>5 - ¿En cuantos estadios se jugo?</h3>
+        <label>
+            <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">7
+        </label>
+        <label>
+            <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">9
+        </label>
+        <label>
+            <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">8
+        </label>
+        
+        </section>
+
+        <button onclick="corregir()">CORREGIR</button>
+        <h2>Cantidad acertada: <span id="resultado"></span></h2>
+
+    </div>
+
+    <script src="scrip.js"></script>
+    
+</body>
+</html>
